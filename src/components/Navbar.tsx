@@ -49,6 +49,8 @@ export default function Navbar() {
               {item}
             </motion.a>
           ))}
+
+          <ThemeToggle />
         </div>
       </div>
     </motion.nav>

@@ -65,7 +65,7 @@ export default function Contact() {
           </p>
 
           <motion.a
-            href="mailto:your.email@example.com"
+            href="mailto:lej5769@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] rounded-full font-display font-bold text-xl mx-auto max-w-md"

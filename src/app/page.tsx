@@ -36,7 +36,6 @@ export default function Home() {
           transition={{ type: 'spring', damping: 30, stiffness: 200 }}
         />
       </div>
-
       
       {/* Animated background gradient - light mode */}
       <div className="fixed inset-0 -z-10 light:block hidden">
