@@ -31,7 +31,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          YourName
+          Hyeonha
         </motion.a>
 
         <div className="flex items-center gap-8">

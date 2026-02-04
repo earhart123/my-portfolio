@@ -14,7 +14,7 @@ export default function Footer() {
         >
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-display font-bold text-gradient mb-2">
-              Your Name
+              LeeHyeonha
             </h3>
             <p className="text-[var(--text-secondary)]">
               © 2026 Your Name. Made with{' '}

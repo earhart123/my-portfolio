@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="text-7xl md:text-9xl font-display font-bold mb-6 glow-text"
         >
-          <span className="text-gradient">Your Name</span>
+          <span className="text-gradient">Hyeonha</span>
         </motion.h1>
 
         <motion.h2
@@ -30,7 +30,7 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="text-3xl md:text-5xl font-display font-light text-[var(--text-secondary)] mb-8"
         >
-          Frontend Developer
+          Developer
         </motion.h2>
 
         <motion.p

@@ -15,8 +15,8 @@ const bodyFont = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Your Name | Portfolio',
-  description: '프론트엔드 개발자 포트폴리오',
+  title: 'Hyeonha | Portfolio',
+  description: '개발자 포트폴리오',
 }
 
 export default function RootLayout({

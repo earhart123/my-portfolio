@@ -54,7 +54,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-3xl font-display font-bold mb-6">
-              안녕하세요, <span className="text-gradient">Your Name</span>입니다
+              안녕하세요, <span className="text-gradient">이현하</span>입니다
             </h3>
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-4">
               저는 사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다. 모던 웹 기술과 세련된 인터랙션을 통해 기억에 남는 디지털 경험을 만들어가는 것에 열정을 가지고 있습니다.

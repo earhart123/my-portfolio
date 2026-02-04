@@ -151,7 +151,7 @@ export default function Projects() {
           className="text-center mt-16"
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/earhart123"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--bg-secondary)] rounded-full font-display font-semibold hover:shadow-[0_0_40px_rgba(255,77,166,0.3)] transition-all"
