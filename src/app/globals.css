@@ -11,6 +11,16 @@
   --text-secondary: #a0a0b0;
 }
 
+/* Light mode colors */
+:root.light {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --accent-primary: #e63b7a;
+  --accent-secondary: #3b7fe6;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b7280;
+}
+
 @layer base {
   body {
     @apply bg-[var(--bg-primary)] text-[var(--text-primary)];
@@ -26,8 +36,16 @@
     text-shadow: 0 0 20px rgba(255, 77, 166, 0.5);
   }
   
+  .light .glow-text {
+    text-shadow: 0 0 20px rgba(230, 59, 122, 0.3);
+  }
+  
   .card-glow {
     box-shadow: 0 0 30px rgba(77, 159, 255, 0.1);
+  }
+  
+  .light .card-glow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
 }
 

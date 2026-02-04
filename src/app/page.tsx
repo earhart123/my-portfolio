@@ -37,6 +37,21 @@ export default function Home() {
         />
       </div>
 
+      
+      {/* Animated background gradient - light mode */}
+      <div className="fixed inset-0 -z-10 light:block hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,127,230,0.08),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(230,59,122,0.08),transparent_50%)]" />
+        <motion.div
+          className="absolute w-96 h-96 bg-[var(--accent-primary)] rounded-full blur-[150px] opacity-10"
+          animate={{
+            x: mousePosition.x - 192,
+            y: mousePosition.y - 192,
+          }}
+          transition={{ type: 'spring', damping: 30, stiffness: 200 }}
+        />
+      </div>
+
       <Navbar />
       <Hero />
       <About />
