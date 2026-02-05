@@ -2,9 +2,36 @@
 
 import { motion } from 'framer-motion'
 import { useTheme } from '@/contexts/ThemeContext'
+import { useEffect, useState } from 'react'
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // 마운트 전에는 기본 버튼만 표시
+  if (!mounted) {
+    return (
+      <div className="w-14 h-14 rounded-full bg-[var(--bg-secondary)] flex items-center justify-center">
+        <svg
+          className="w-6 h-6 text-[var(--text-primary)]"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+      </div>
+    )
+  }
 
   return (
     <motion.button

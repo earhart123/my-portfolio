@@ -22,6 +22,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (savedTheme) {
       setTheme(savedTheme)
       document.documentElement.classList.toggle('light', savedTheme === 'light')
+    } else {
+      // 기본값은 다크 모드
+      document.documentElement.classList.remove('light')
     }
   }, [])
 
@@ -32,13 +35,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.classList.toggle('light', newTheme === 'light')
   }
 
-  // 마운트 전에는 플래시 방지를 위해 null 반환
-  if (!mounted) {
-    return <>{children}</>
+  const value = {
+    theme,
+    toggleTheme,
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={value}>
       {children}
     </ThemeContext.Provider>
   )

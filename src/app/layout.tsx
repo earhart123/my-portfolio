@@ -16,7 +16,7 @@ const bodyFont = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Your Name | Portfolio',
+  title: 'Hyeonha | Portfolio',
   description: '개발자 포트폴리오',
 }
 
@@ -27,6 +27,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className="scroll-smooth">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  if (theme === 'light') {
+                    document.documentElement.classList.add('light');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className={`${displayFont.variable} ${bodyFont.variable} font-body antialiased`}>
         <ThemeProvider>
           {children}
