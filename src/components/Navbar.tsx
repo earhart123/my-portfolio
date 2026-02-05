@@ -32,7 +32,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Hyeonha
+          YourName
         </motion.a>
 
         <div className="flex items-center gap-8">
@@ -40,7 +40,7 @@ export default function Navbar() {
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium"
+              className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium hidden md:block"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -49,7 +49,7 @@ export default function Navbar() {
               {item}
             </motion.a>
           ))}
-
+          
           <ThemeToggle />
         </div>
       </div>

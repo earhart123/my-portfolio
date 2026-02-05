@@ -23,7 +23,7 @@
 
 @layer base {
   body {
-    @apply bg-[var(--bg-primary)] text-[var(--text-primary)];
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300;
   }
 }
 

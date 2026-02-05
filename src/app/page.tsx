@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden">
-      {/* Animated background gradient */}
+      {/* Animated background gradient - dark mode */}
       <div className="fixed inset-0 -z-10 dark:block hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(77,159,255,0.1),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,77,166,0.1),transparent_50%)]" />
@@ -36,7 +36,7 @@ export default function Home() {
           transition={{ type: 'spring', damping: 30, stiffness: 200 }}
         />
       </div>
-      
+
       {/* Animated background gradient - light mode */}
       <div className="fixed inset-0 -z-10 light:block hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,127,230,0.08),transparent_50%)]" />
