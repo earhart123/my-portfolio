@@ -39,9 +39,9 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="text-xl md:text-2xl text-[var(--text-secondary)] max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다.
+          사용자의 니즈를 내 일처럼 고민하는, 공감형 개발자입니다.
           <br />
-          모던 웹 기술과 세련된 인터랙션으로 기억에 남는 디지털 경험을 만들어갑니다.
+          서비스의 품질(QA)과 기술(Backend)의 조화로, 사용자가 오롯이 즐길 수 있는 경험을 완성합니다.
         </motion.p>
 
         <motion.div

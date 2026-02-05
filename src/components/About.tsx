@@ -4,13 +4,11 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   const techStack = [
-    'React',
-    'Next.js',
-    'TypeScript',
-    'Tailwind CSS',
+    'Java',
+    'Spring Boot',
     'JavaScript',
-    'HTML5',
-    'CSS3',
+    'n8n',
+    'JavaScript',
     'Node.js',
     'Git',
     'Figma',
@@ -57,10 +55,10 @@ export default function About() {
               안녕하세요, <span className="text-gradient">이현하</span>입니다
             </h3>
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-4">
-              저는 사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다. 모던 웹 기술과 세련된 인터랙션을 통해 기억에 남는 디지털 경험을 만들어가는 것에 열정을 가지고 있습니다.
+              QA 경력으로 꼼꼼함으로 안정성을 확보하고, 자동화 기술을 더해 비효율을 걷어냅니다. 기술을 통해 동료와 사용자의 가려운 곳을 긁어주는, 생산적이고 실용적인 서비스를 만드는 데 열정을 쏟고 있습니다.
             </p>
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
-              React, Next.js, TypeScript를 주력으로 사용하며, 최신 웹 표준과 접근성을 준수하는 고품질 코드를 작성합니다. 지속적인 학습과 성장을 추구하며, 팀과의 협업을 통해 더 나은 결과물을 만들어냅니다.
+              Java, JavaScript, n8n 등 문제 해결에 가장 적합한 도구를 유연하게 활용합니다. 지속적인 학습과 성장을 추구하며, 팀과의 협업을 통해 더 나은 결과물을 만들어냅니다.
             </p>
           </motion.div>
         </div>
